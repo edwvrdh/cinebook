@@ -17,8 +17,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="1P7-u3-puf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.88871800899999998" green="0.3402808309" blue="0.46012169120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="-1509" y="824"/>
         </scene>
-        <!--Home-->
+        <!--Now Showing-->
         <scene sceneID="G5y-Gz-h3I">
             <objects>
                 <viewController id="SwT-a8-ddi" customClass="HomeViewController" customModule="CineBook" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,27 +97,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SsA-ms-UAU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="10" width="414" height="715"/>
                                 <color key="backgroundColor" red="0.064743406109999999" green="0.062976975209999994" blue="0.093832123119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eeU-u8-ffT">
-                                    <size key="itemSize" width="190" height="262"/>
+                                    <size key="itemSize" width="200" height="300"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionViewCell" id="OBn-8u-xPc" customClass="MovieCollectionViewCell" customModule="CineBook" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="190" height="262"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ly9-Xf-9Yy">
-                                            <rect key="frame" x="0.0" y="0.0" width="190" height="262"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eVT-fT-TPA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="214.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="252.5"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor Strange in the Multiverse of Madness " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaj-F3-lUc">
-                                                    <rect key="frame" x="8" y="222.5" width="174" height="31.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor Strange in the Multiverse of Madness " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xaj-F3-lUc">
+                                                    <rect key="frame" x="8" y="260.5" width="184" height="31.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -126,16 +127,14 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="xaj-F3-lUc" secondAttribute="trailing" constant="8" id="0j6-su-O8D"/>
                                                 <constraint firstItem="eVT-fT-TPA" firstAttribute="top" secondItem="Ly9-Xf-9Yy" secondAttribute="top" id="18N-BL-GYB"/>
-                                                <constraint firstItem="xaj-F3-lUc" firstAttribute="top" secondItem="eVT-fT-TPA" secondAttribute="bottom" constant="8" id="Kll-id-Mol"/>
                                                 <constraint firstAttribute="trailing" secondItem="eVT-fT-TPA" secondAttribute="trailing" id="NXL-55-ACg"/>
                                                 <constraint firstItem="xaj-F3-lUc" firstAttribute="leading" secondItem="Ly9-Xf-9Yy" secondAttribute="leading" constant="8" id="OLv-ck-aCW"/>
                                                 <constraint firstAttribute="bottom" secondItem="xaj-F3-lUc" secondAttribute="bottom" constant="8" id="THa-RN-uaF"/>
                                                 <constraint firstItem="eVT-fT-TPA" firstAttribute="leading" secondItem="Ly9-Xf-9Yy" secondAttribute="leading" id="Y7V-yV-IEB"/>
                                                 <constraint firstItem="xaj-F3-lUc" firstAttribute="top" secondItem="eVT-fT-TPA" secondAttribute="bottom" constant="8" id="n1B-fX-Lb1"/>
-                                                <constraint firstItem="xaj-F3-lUc" firstAttribute="top" secondItem="eVT-fT-TPA" secondAttribute="bottom" id="qvm-CC-Dlv"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="190" height="262"/>
+                                        <size key="customSize" width="200" height="300"/>
                                         <connections>
                                             <outlet property="movieImageView" destination="eVT-fT-TPA" id="MzS-GZ-I4z"/>
                                             <outlet property="movieLabel" destination="xaj-F3-lUc" id="UdK-bN-YVE"/>
@@ -148,12 +147,12 @@
                         <color key="backgroundColor" red="0.064743406113262694" green="0.062976975213488565" blue="0.093832123121133204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SsA-ms-UAU" firstAttribute="trailing" secondItem="uPV-Fy-4hP" secondAttribute="trailing" id="2gq-CR-2S5"/>
+                            <constraint firstItem="SsA-ms-UAU" firstAttribute="top" secondItem="uPV-Fy-4hP" secondAttribute="top" constant="10" id="2nW-4x-SRw"/>
                             <constraint firstItem="SsA-ms-UAU" firstAttribute="bottom" secondItem="uPV-Fy-4hP" secondAttribute="bottom" id="93Y-EG-23G"/>
-                            <constraint firstItem="SsA-ms-UAU" firstAttribute="top" secondItem="uPV-Fy-4hP" secondAttribute="top" id="HeH-pC-oGj"/>
                             <constraint firstItem="SsA-ms-UAU" firstAttribute="leading" secondItem="uPV-Fy-4hP" secondAttribute="leading" id="kcl-dj-zI0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="zfY-Qx-Wrd"/>
+                    <navigationItem key="navigationItem" title="Now Showing" id="zfY-Qx-Wrd"/>
                     <connections>
                         <outlet property="collectionView" destination="SsA-ms-UAU" id="MCQ-6x-4Tv"/>
                         <segue destination="vD4-Xz-rc8" kind="show" identifier="movieInfo" id="Efd-aQ-YHP"/>

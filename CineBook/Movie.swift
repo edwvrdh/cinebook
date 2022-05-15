@@ -14,7 +14,9 @@ struct Movie {
 
 let movies: [Movie] =
 [
-    Movie(name: "Doctor Strange in the Multiverse of Madness", image: UIImage(named: "strange")!),
     Movie(name: "The Lost City", image: UIImage(named: "lostcity")!),
-    Movie(name: "Sonic the Hedgehog 2", image: UIImage(named: "sonic")!)
+    Movie(name: "Doctor Strange in the Multiverse of Madness", image: UIImage(named: "doctor")!),
+    Movie(name: "Sonic the Hedgehog 2", image: UIImage(named: "sonic")!),
+    Movie(name: "Firestarter", image: UIImage(named:"firestarter")!),
+    Movie(name: "Top Gun: Maverick", image: UIImage(named:"topgun")!)
 ]
