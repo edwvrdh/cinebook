@@ -87,6 +87,34 @@
             </objects>
             <point key="canvasLocation" x="-1509" y="824"/>
         </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="78P-30-8r5">
+            <objects>
+                <viewController id="lPf-ke-L4E" customClass="MovieDetailsViewController" customModule="CineBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n5Z-Uf-3Oa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlH-q6-JEA">
+                                <rect key="frame" x="20" y="33" width="374" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vvr-dB-ZAc"/>
+                        <color key="backgroundColor" red="0.064743406109999999" green="0.062976975209999994" blue="0.093832123119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iPE-ja-9ft"/>
+                    <connections>
+                        <outlet property="overviewLabel" destination="TlH-q6-JEA" id="vfX-ee-mVN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eik-ZK-cPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="824"/>
+        </scene>
         <!--Now Showing-->
         <scene sceneID="G5y-Gz-h3I">
             <objects>
@@ -154,28 +182,12 @@
                     <navigationItem key="navigationItem" title="Now Showing" id="zfY-Qx-Wrd"/>
                     <connections>
                         <outlet property="collectionView" destination="SsA-ms-UAU" id="MCQ-6x-4Tv"/>
-                        <segue destination="vD4-Xz-rc8" kind="show" identifier="movieInfo" id="Efd-aQ-YHP"/>
+                        <segue destination="lPf-ke-L4E" kind="show" identifier="movieDetails" id="I7s-mT-eI0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3o-yG-xV3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="823.66071428571422"/>
-        </scene>
-        <!--Movie Info View Controller-->
-        <scene sceneID="cdx-Dm-CPF">
-            <objects>
-                <viewController storyboardIdentifier="MovieInfoViewController" id="vD4-Xz-rc8" customClass="MovieInfoViewController" customModule="CineBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UCS-M1-RlZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="qO4-xz-0s8"/>
-                        <color key="backgroundColor" red="0.064743406109999999" green="0.062976975209999994" blue="0.093832123119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="DOe-l5-EsT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PS6-Pe-tJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="860" y="835"/>
         </scene>
     </scenes>
     <resources>
