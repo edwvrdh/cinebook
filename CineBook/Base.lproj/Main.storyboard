@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.88871800899999998" green="0.3402808309" blue="0.46012169120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.39512557815143001" green="0.39562574958157615" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="ofc-pN-7PY" kind="relationship" relationship="viewControllers" id="9ya-Gp-hax"/>
@@ -32,7 +32,6 @@
         <!--Tickets-->
         <scene sceneID="Aqv-Up-Hg5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YkM-0B-RiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="8n0-su-jrY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tickets" selectedImage="ticket.fill" catalog="system" id="8Mm-Df-YWZ">
                         <imageReference key="image" image="ticket.fill" catalog="system" symbolScale="default"/>
@@ -48,6 +47,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sg3-Wz-5t1"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YkM-0B-RiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1509" y="84"/>
         </scene>
@@ -95,20 +95,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlH-q6-JEA">
-                                <rect key="frame" x="20" y="20" width="374" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psl-d0-9Gg">
+                                <rect key="frame" x="20" y="13" width="217" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NA6-ex-qMT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.39512557819999999" green="0.39562574960000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runtime:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ej-fc-R8R">
+                                <rect key="frame" x="262" y="13" width="132" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="Kzp-Kg-fHQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.39512557819999999" green="0.39562574960000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVC-Zt-VLF">
+                                <rect key="frame" x="20" y="571" width="374" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="yfl-X0-Inz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buy Ticket" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseBackgroundColor" red="0.39512557819999999" green="0.39562574960000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Description" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlH-q6-JEA">
+                                <rect key="frame" x="20" y="96" width="374" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vvr-dB-ZAc"/>
                         <color key="backgroundColor" red="0.064743406109999999" green="0.062976975209999994" blue="0.093832123119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Psl-d0-9Gg" firstAttribute="baseline" secondItem="1Ej-fc-R8R" secondAttribute="baseline" id="22f-IO-2d5"/>
+                            <constraint firstItem="1Ej-fc-R8R" firstAttribute="trailing" secondItem="n5Z-Uf-3Oa" secondAttribute="trailingMargin" id="2DK-hQ-W5U"/>
+                            <constraint firstItem="1Ej-fc-R8R" firstAttribute="leading" secondItem="Psl-d0-9Gg" secondAttribute="trailing" constant="25" id="4mF-rs-POm"/>
+                            <constraint firstItem="TlH-q6-JEA" firstAttribute="top" secondItem="Psl-d0-9Gg" secondAttribute="bottom" constant="23" id="4qe-QO-Th2"/>
+                            <constraint firstItem="Vvr-dB-ZAc" firstAttribute="bottom" secondItem="MVC-Zt-VLF" secondAttribute="bottom" constant="53" id="FKM-Tz-RbW"/>
+                            <constraint firstItem="TlH-q6-JEA" firstAttribute="leading" secondItem="Vvr-dB-ZAc" secondAttribute="leading" constant="20" id="I9L-Q2-UbQ"/>
+                            <constraint firstItem="Vvr-dB-ZAc" firstAttribute="trailing" secondItem="TlH-q6-JEA" secondAttribute="trailing" constant="20" id="TAu-IF-Hh4"/>
+                            <constraint firstItem="Psl-d0-9Gg" firstAttribute="firstBaseline" secondItem="1Ej-fc-R8R" secondAttribute="firstBaseline" id="WhR-w8-vcv"/>
+                            <constraint firstItem="Psl-d0-9Gg" firstAttribute="top" secondItem="Vvr-dB-ZAc" secondAttribute="top" constant="13" id="az5-lQ-83o"/>
+                            <constraint firstItem="MVC-Zt-VLF" firstAttribute="trailing" secondItem="TlH-q6-JEA" secondAttribute="trailing" id="e5d-GA-7BR"/>
+                            <constraint firstItem="MVC-Zt-VLF" firstAttribute="leading" secondItem="TlH-q6-JEA" secondAttribute="leading" id="gKD-Zn-Tbr"/>
+                            <constraint firstItem="Psl-d0-9Gg" firstAttribute="leading" secondItem="n5Z-Uf-3Oa" secondAttribute="leadingMargin" id="vLw-Wd-i8i"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iPE-ja-9ft"/>
                     <connections>
+                        <outlet property="dateLabel" destination="Psl-d0-9Gg" id="HBe-Bh-CC9"/>
                         <outlet property="overviewLabel" destination="TlH-q6-JEA" id="vfX-ee-mVN"/>
+                        <outlet property="runTimeLabel" destination="1Ej-fc-R8R" id="SFz-kX-oXb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eik-ZK-cPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

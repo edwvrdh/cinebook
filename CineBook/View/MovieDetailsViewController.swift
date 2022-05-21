@@ -10,13 +10,15 @@ import UIKit
 class MovieDetailsViewController: UIViewController {
    
     @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var runTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
         
         getMovieDetails(ID: movieID)
-        
+        overviewLabel.sizeToFit()
         
     }
     
@@ -43,6 +45,8 @@ class MovieDetailsViewController: UIViewController {
             DispatchQueue.main.async {
                 self.overviewLabel.text = json.overview
                 self.title = json.original_title
+                self.dateLabel.text = "Release Date: \(json.release_date)"
+                self.runTimeLabel.text = "Runtime: \(String(json.runtime)) mins"
                 
             }
         }
@@ -54,6 +58,8 @@ class MovieDetailsViewController: UIViewController {
         let belongs_to_collection: MyResult
         let overview: String
         let original_title: String
+        let release_date: String
+        let runtime: Int
     }
     
     struct MyResult: Codable {
