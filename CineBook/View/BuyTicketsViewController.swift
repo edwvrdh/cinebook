@@ -30,6 +30,14 @@ class BuyTicketsViewController: UIViewController {
    //     totalLabel.text = "Total: $\(total)"
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goToYourBooking") {
+            let VC = segue.destination as! YourBookingViewController
+            VC.sessionTime = sessionLabel.text!
+            VC.totalPrice = totalLabel.text!
+        }
+    }
+    
     @IBAction func adultStepperChanged(_ sender: UIStepper) {
         adultTicketsLabel.text = Int(sender.value).description
         

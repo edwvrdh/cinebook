@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F333C8EF28390E66004D5039 /* BuyTicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333C8EE28390E65004D5039 /* BuyTicketsViewController.swift */; };
+		F333C8F128394861004D5039 /* YourBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333C8F028394860004D5039 /* YourBookingViewController.swift */; };
 		F3FF50752830B0B4005835D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF50742830B0B4005835D7 /* AppDelegate.swift */; };
 		F3FF50772830B0B4005835D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF50762830B0B4005835D7 /* SceneDelegate.swift */; };
 		F3FF50792830B0B4005835D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF50782830B0B4005835D7 /* HomeViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		F333C8EE28390E65004D5039 /* BuyTicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketsViewController.swift; sourceTree = "<group>"; };
+		F333C8F028394860004D5039 /* YourBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourBookingViewController.swift; sourceTree = "<group>"; };
 		F3FF50712830B0B4005835D7 /* CineBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FF50742830B0B4005835D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3FF50762830B0B4005835D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				F3FF50912837F467005835D7 /* TicketsViewController.swift */,
 				F3FF50932837F52B005835D7 /* MovieDetailsViewController.swift */,
 				F333C8EE28390E65004D5039 /* BuyTicketsViewController.swift */,
+				F333C8F028394860004D5039 /* YourBookingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F333C8F128394861004D5039 /* YourBookingViewController.swift in Sources */,
 				F3FF50792830B0B4005835D7 /* HomeViewController.swift in Sources */,
 				F3FF50752830B0B4005835D7 /* AppDelegate.swift in Sources */,
 				F3FF50942837F52B005835D7 /* MovieDetailsViewController.swift in Sources */,
