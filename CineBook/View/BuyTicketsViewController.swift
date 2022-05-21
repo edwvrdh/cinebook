@@ -19,9 +19,7 @@ class BuyTicketsViewController: UIViewController {
     @IBOutlet weak var seniorTicketsLabel: UILabel!
     @IBOutlet weak var studentTicketsLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-    
-    var total = 0
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
