@@ -15,7 +15,7 @@ class MovieDetailsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
         
-        getMovieDetails(ID: 453395)
+        getMovieDetails(ID: movieID)
         
         
     }

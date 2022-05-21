@@ -7,6 +7,8 @@
 
 import UIKit
 
+var movieID = 0
+
 class HomeViewController: UIViewController {
     
 
@@ -44,9 +46,23 @@ extension HomeViewController: UICollectionViewDelegate {
     
     // segue to Movie Details screen
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 1 {
-            self.performSegue(withIdentifier: "movieDetails", sender: nil)
+        
+        // set movieID depending on the movie that the user taps on
+        switch indexPath.item {
+        case 0:
+            movieID = 752623
+        case 1:
+            movieID = 453395
+        case 2:
+            movieID = 675353
+        case 3:
+            movieID = 532710
+        case 4:
+            movieID = 361743
+        default:
+            return
         }
         
+        self.performSegue(withIdentifier: "movieDetails", sender: nil)
     }
 }
