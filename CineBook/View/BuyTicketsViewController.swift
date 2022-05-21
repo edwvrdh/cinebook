@@ -20,6 +20,7 @@ class BuyTicketsViewController: UIViewController {
     @IBOutlet weak var studentTicketsLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     
+    var total = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +29,15 @@ class BuyTicketsViewController: UIViewController {
         nameLabel.text = movieTitle
         nameLabel.sizeToFit()
         sessionLabel.text = String(session)
-    
+   //     totalLabel.text = "Total: $\(total)"
     }
     
     @IBAction func adultStepperChanged(_ sender: UIStepper) {
         adultTicketsLabel.text = Int(sender.value).description
+        
+        // !!!!
+        // This successfully increments the totalLabel but only includes the adult tickets. I can't work out how to get the label to print out the total value of all ticket types (child, senior, student etc)
+        totalLabel.text = "Total: $\(Int(sender.value) * 15)"
     }
     @IBAction func childStepperChanged(_ sender: UIStepper) {
         childTicketsLabel.text = Int(sender.value).description
