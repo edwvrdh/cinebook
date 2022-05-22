@@ -28,6 +28,7 @@ class YourBookingViewController: UIViewController {
         
     }
     
+    // go back to initial view controller
     @IBAction func continueBtn(_ sender:UIButton) {
         navigationController?.popToRootViewController(animated: true)
     }

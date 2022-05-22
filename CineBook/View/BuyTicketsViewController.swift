@@ -40,9 +40,7 @@ class BuyTicketsViewController: UIViewController {
     
     @IBAction func adultStepperChanged(_ sender: UIStepper) {
         adultTicketsLabel.text = Int(sender.value).description
-        
-        // !!!!
-        // This successfully increments the totalLabel but only includes the adult tickets. I can't work out how to get the label to print out the total value of all ticket types (child, senior, student etc)
+    
         totalLabel.text = "Total: $\(Int(sender.value) * 15)"
     }
     @IBAction func childStepperChanged(_ sender: UIStepper) {
